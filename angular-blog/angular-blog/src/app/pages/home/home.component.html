@@ -1,12 +1,19 @@
-<app-menu-bar></app-menu-bar>
 <app-menu-title></app-menu-title>
 <div class="container-articles">
   <div class="articles-main">
-    <app-big-card></app-big-card>
+    <app-big-card
+      [id]="dataBig.id"
+      [photoCover]="dataBig.photo"
+      [cardTitle]="dataBig.title"
+      [cardDescription]="dataBig.description"
+    >
+  </app-big-card>
   </div>
   <div class="articles-others">
-    <app-small-card></app-small-card>
-    <app-small-card></app-small-card>
-    <app-small-card></app-small-card>
+    <app-small-card *ngFor="let data of dataSmall"
+      [id]="data.id"
+      [photoCover]="data.photo"
+      [cardTitle]="data.title"
+    ></app-small-card>
   </div>
 </div>

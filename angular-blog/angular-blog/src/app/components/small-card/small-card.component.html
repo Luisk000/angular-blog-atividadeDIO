@@ -2,11 +2,11 @@
   <div class="container-small-card-content">
     <div class="small-card-photo">
       <img
-        src="https://tipper.com.br/top-10-rodizios-de-sushi-em-sp/tabua-dos-especiais-no-suporte-de-mesa/"
+        src="{{photoCover}}"
       />
     </div>
     <div class="small-card-title">
-      <h1><a href="">Saiu a nova versão do Angular</a></h1>
+      <h1><a [routerLink]="['/content/', id]">{{cardTitle}}</a></h1>
     </div>
   </div>
   <div class="container-small-card-separator">

@@ -1,19 +1,16 @@
 <div class="container-big-card">
 <div class="big-card-photo">
     <img 
-    src="https://minhasreceitinhas.com.br/wp-content/uploads/2018/12/iStock-623858612-1200x800.jpg" 
+    src="{{ photoCover }}" 
     >
 </div>
 <div class="big-card-title">
-    <h1><a href="">Saiu a nova versão do Angular</a></h1>
+    <h1><a [routerLink]="['/content/', id]">{{cardTitle}}</a></h1>
 </div>
 <div class="big-card-description">
     <p>
-        <a href="">
-        O pato é assado, cortado em pedaços e mergulhado no tucupi, 
-        um caldo amarelo extraído da mandioca. O último toque vem do 
-        jambu, planta picante que provoca ligeira dormência na boca 
-        e que faz parte de muitas receitas da cozinha paraense.
+        <a [routerLink]="['/content/', id]">
+            {{cardDescription}}
         </a>
     </p>
 </div>
