@@ -22,5 +22,23 @@ export const dataFake = [
         "photo": "https://i.ytimg.com/vi/SFaKscN8j04/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB298gOpHJmlE-eawuoQcK-e5H27g",
         "title": "Shimeji",
         "description": "No Japão, o shimeji é considerado o mais delicioso dos cogumelos, existindo uma famosa frase em japonês \"kaori matsutake, aji shimeji\" que significa o melhor aroma é do matsutake e o melhor sabor do shimeji."
-    }
+    },
+    {
+        "id": "5",
+        "photo": "https://www.ajinomotofoodservice.com.br/uploads/recitas/recitas/kare-1920x1080-20-08-2019-2yqxn.jpg",
+        "title": "Karê",
+        "description": "O karê é um dos pratos mais populares da culinária japonesa. Geralmente é servido de três maneiras: karē raisu (caril com arroz), karē udon (com macarrão) e karē-pan (pão). É geralmente mais grosso, mais doce e mais suave do que seu equivalente indiano."
+    },
+    {
+        "id": "6",
+        "photo": "https://sabores-new.s3.amazonaws.com/public/2024/11/shio-lamen.jpg",
+        "title": "Ramen",
+        "description": "Um prato de ramen normalmente é composto por um tipo de macarrão chinês, uma sopa com caldo à base de ossos de porco, peixe ou frango, e temperados com uma base tarê (molho) que dá sabor ao caldo base, para a confecção da montagem do prato, e os adicionais podem variar dependendo da região do Japão e do restaurante que vende o ramen (conhecido como Ramen-Ya)"
+    },
+    {
+        "id": "7",
+        "photo": "https://www.sabornamesa.com.br/media/k2/items/cache/945a0a7a8f2da41b3a456e91531d5e81_XL.jpg",
+        "title": "Tonkatsu",
+        "description": "Tonkatsu é um prato da culinária japonesa, inventado no fim do século XIX e um dos mais populares do Japão. Consiste de uma costeleta de porco frita e empanada, entre um e dois centímetros de espessura e fatiada em pequenos pedaços, geralmente servida com repolho picado e/ou sopa de missô"
+    },
 ]

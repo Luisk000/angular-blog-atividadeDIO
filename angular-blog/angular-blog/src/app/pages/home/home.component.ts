@@ -10,14 +10,18 @@ import { dataFake } from '../../data/dataFake'
 })
 export class HomeComponent implements OnInit{
 
-  dataBig: any;
-  dataSmall: any;
+  postChunks: any[] = [];
 
   constructor(){}
 
   ngOnInit() {
-    this.dataBig = dataFake[0]
-    this.dataSmall = dataFake.slice(1)
+    this.setPostChunks();
   }
 
+  setPostChunks(){
+    let dataFakeTemporario = dataFake.slice();
+    while (dataFakeTemporario.length > 0)
+      this.postChunks.push(dataFakeTemporario.splice(0, 4));
+  }
+  
 }

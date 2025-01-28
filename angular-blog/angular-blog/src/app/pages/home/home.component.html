@@ -1,19 +1,22 @@
 <app-menu-title></app-menu-title>
-<div class="container-articles">
+<div class="container-articles" *ngFor="let postChunk of postChunks">
   <div class="articles-main">
     <app-big-card
-      [id]="dataBig.id"
-      [photoCover]="dataBig.photo"
-      [cardTitle]="dataBig.title"
-      [cardDescription]="dataBig.description"
+      [id]="postChunk[0].id"
+      [photoCover]="postChunk[0].photo"
+      [cardTitle]="postChunk[0].title"
+      [cardDescription]="postChunk[0].description"
     >
-  </app-big-card>
+    </app-big-card>
   </div>
   <div class="articles-others">
-    <app-small-card *ngFor="let data of dataSmall"
-      [id]="data.id"
-      [photoCover]="data.photo"
-      [cardTitle]="data.title"
-    ></app-small-card>
+    <span *ngFor="let i of [1, 2, 3]">
+      <app-small-card
+        *ngIf="postChunk[i]"
+        [id]="postChunk[i].id"
+        [photoCover]="postChunk[i].photo"
+        [cardTitle]="postChunk[i].title"
+      ></app-small-card>
+    </span>
   </div>
 </div>

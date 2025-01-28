@@ -29,3 +29,7 @@
 .content-description > p{
     color: rgb(167, 162, 162);
 }
+
+.content-voltar{
+    margin-top: 15px;
+}
